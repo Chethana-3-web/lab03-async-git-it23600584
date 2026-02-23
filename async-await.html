@@ -15,10 +15,14 @@ function resolveAfter2Seconds() {
 }
 async function asyncCall() {
   console.log('calling');
+  //change
+  document.getElementById("demo").innerHTML = result;
+
   const result = await resolveAfter2Seconds();
   console.log(result);
   // Expected output: "resolved"
 }
+
 asyncCall();
 </script>
 </body>
